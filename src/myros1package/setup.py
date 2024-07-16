@@ -20,7 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'temperature_publisher = myros1package.temppubnode1:main',
+            'temperature_publisher = myros1package.temperature_publisher :main',
+            'threshold_subscriber=myros1package.threshold_subscriber:main',
+            'alert_publisher=myros1package.alert_publisher:main'
         ],
     },
 )
