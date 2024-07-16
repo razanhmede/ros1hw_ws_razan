@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/myros1package/myros1package.egg-info/PKG-INFO
+writing dependency_links to ../../build/myros1package/myros1package.egg-info/dependency_links.txt
+writing entry points to ../../build/myros1package/myros1package.egg-info/entry_points.txt
+writing requirements to ../../build/myros1package/myros1package.egg-info/requires.txt
+writing top-level names to ../../build/myros1package/myros1package.egg-info/top_level.txt
+reading manifest file '../../build/myros1package/myros1package.egg-info/SOURCES.txt'
+writing manifest file '../../build/myros1package/myros1package.egg-info/SOURCES.txt'
+running build
+running build_py
+copying myros1package/temppubnode1.py -> /home/razanhmede/ros1hw_ws_razan/build/myros1package/build/lib/myros1package
+running install
+running install_lib
+copying /home/razanhmede/ros1hw_ws_razan/build/myros1package/build/lib/myros1package/temppubnode1.py -> /home/razanhmede/ros1hw_ws_razan/install/myros1package/lib/python3.10/site-packages/myros1package
+byte-compiling /home/razanhmede/ros1hw_ws_razan/install/myros1package/lib/python3.10/site-packages/myros1package/temppubnode1.py to temppubnode1.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/razanhmede/ros1hw_ws_razan/install/myros1package/lib/python3.10/site-packages/myros1package-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/myros1package/myros1package.egg-info to /home/razanhmede/ros1hw_ws_razan/install/myros1package/lib/python3.10/site-packages/myros1package-0.0.0-py3.10.egg-info
+running install_scripts
+Installing temperature_publisher script to /home/razanhmede/ros1hw_ws_razan/install/myros1package/lib/myros1package
+writing list of installed files to '/home/razanhmede/ros1hw_ws_razan/build/myros1package/install.log'

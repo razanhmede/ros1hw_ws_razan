@@ -9,6 +9,7 @@ setup.py
 ../../build/myros1package/myros1package.egg-info/top_level.txt
 ../../build/myros1package/myros1package.egg-info/zip-safe
 myros1package/__init__.py
+myros1package/temppubnode1.py
 resource/myros1package
 test/test_copyright.py
 test/test_flake8.py
