@@ -11,7 +11,7 @@ class ThresholdSubscriber(Node):
         super().__init__('threshold_subscriber')
         self.subscription=self.create_subscription(Float32,'temperature',self.temperature_callback,10)
         self.publisher_=self.create_publisher(Alert,'alert_trigger',10)
-        self.threshold=37
+        self.threshold=36
     def temperature_callback(self, msg):
         if msg.data>self.threshold:
             alert_msg=Alert()

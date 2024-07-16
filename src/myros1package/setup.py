@@ -11,7 +11,7 @@ setup(
         (os.path.join('share', package_name), ['package.xml']),
         (os.path.join('share', package_name, 'launch'), glob('launch/*.py')),
     ],
-    install_requires=['setuptools', 'rclpy', 'std_msgs'],
+    install_requires=['setuptools', 'rclpy', 'std_msgs','myros1package_msgs'],
     zip_safe=True,
     maintainer='razanhmede',
     maintainer_email='razan.hmede@lau.edu',
