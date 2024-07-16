@@ -8,8 +8,11 @@ setup.py
 ../../build/myros1package/myros1package.egg-info/requires.txt
 ../../build/myros1package/myros1package.egg-info/top_level.txt
 ../../build/myros1package/myros1package.egg-info/zip-safe
+launch/temperaturemonitorlaunch.py
 myros1package/__init__.py
-myros1package/temppubnode1.py
+myros1package/alert_publisher.py
+myros1package/temperature_publisher.py
+myros1package/threshold_subscriber.py
 resource/myros1package
 test/test_copyright.py
 test/test_flake8.py
