@@ -6,8 +6,8 @@ class AlertPublisher(Node):
     def __init__(self):
         super().__init__('alert_publisher')
         self.publisher_=self.create_publisher(String,'alert',10)
-        self.subscription=self.create_subscription(String,'alert_publisher',self.listener_callback,10)
-    def listener_callback(self, msg):
+        self.subscription=self.create_subscription(String,'alert_publisher',self.alert_callback,10)
+    def alert_callback(self, msg):
         self.get_logger().info('Received alert trigger: "%s"' %msg.data)
         alert_msg= String()
         alert_msg.data='Alert: Temperature exceeded threshold'

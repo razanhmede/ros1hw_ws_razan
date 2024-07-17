@@ -22,6 +22,12 @@ def generate_launch_description():
             name='alert_publisher',
             output='screen'
         ),
+        Node(
+            package='myros1package',
+            executable='temperature_logger',
+            name='temperature_logger',
+            output='screen'
+        ),
     ])
 
 if __name__ == '__main__':

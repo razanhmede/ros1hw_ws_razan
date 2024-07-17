@@ -1,0 +1,30 @@
+[0.975s] Invoking command in '/home/razanhmede/ros1hw_ws_razan/rosassignment1/src/myros1package': PYTHONPATH=/home/razanhmede/ros1hw_ws_razan/rosassignment1/build/myros1package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/razanhmede/ros1hw_ws_razan/rosassignment1/install/myros1package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/myros1package build --build-base /home/razanhmede/ros1hw_ws_razan/rosassignment1/build/myros1package/build install --record /home/razanhmede/ros1hw_ws_razan/rosassignment1/build/myros1package/install.log --single-version-externally-managed install_data
+[1.243s] running egg_info
+[1.244s] writing ../../build/myros1package/myros1package.egg-info/PKG-INFO
+[1.245s] writing dependency_links to ../../build/myros1package/myros1package.egg-info/dependency_links.txt
+[1.245s] writing entry points to ../../build/myros1package/myros1package.egg-info/entry_points.txt
+[1.246s] writing requirements to ../../build/myros1package/myros1package.egg-info/requires.txt
+[1.246s] writing top-level names to ../../build/myros1package/myros1package.egg-info/top_level.txt
+[1.249s] reading manifest file '../../build/myros1package/myros1package.egg-info/SOURCES.txt'
+[1.252s] writing manifest file '../../build/myros1package/myros1package.egg-info/SOURCES.txt'
+[1.252s] running build
+[1.252s] running build_py
+[1.252s] copying myros1package/temperature_logger.py -> /home/razanhmede/ros1hw_ws_razan/rosassignment1/build/myros1package/build/lib/myros1package
+[1.252s] copying myros1package/alert_publisher.py -> /home/razanhmede/ros1hw_ws_razan/rosassignment1/build/myros1package/build/lib/myros1package
+[1.253s] running install
+[1.253s] running install_lib
+[1.254s] copying /home/razanhmede/ros1hw_ws_razan/rosassignment1/build/myros1package/build/lib/myros1package/temperature_logger.py -> /home/razanhmede/ros1hw_ws_razan/rosassignment1/install/myros1package/lib/python3.10/site-packages/myros1package
+[1.254s] copying /home/razanhmede/ros1hw_ws_razan/rosassignment1/build/myros1package/build/lib/myros1package/alert_publisher.py -> /home/razanhmede/ros1hw_ws_razan/rosassignment1/install/myros1package/lib/python3.10/site-packages/myros1package
+[1.255s] byte-compiling /home/razanhmede/ros1hw_ws_razan/rosassignment1/install/myros1package/lib/python3.10/site-packages/myros1package/temperature_logger.py to temperature_logger.cpython-310.pyc
+[1.256s] byte-compiling /home/razanhmede/ros1hw_ws_razan/rosassignment1/install/myros1package/lib/python3.10/site-packages/myros1package/alert_publisher.py to alert_publisher.cpython-310.pyc
+[1.257s] running install_data
+[1.257s] running install_egg_info
+[1.259s] removing '/home/razanhmede/ros1hw_ws_razan/rosassignment1/install/myros1package/lib/python3.10/site-packages/myros1package-0.0.0-py3.10.egg-info' (and everything under it)
+[1.260s] Copying ../../build/myros1package/myros1package.egg-info to /home/razanhmede/ros1hw_ws_razan/rosassignment1/install/myros1package/lib/python3.10/site-packages/myros1package-0.0.0-py3.10.egg-info
+[1.282s] running install_scripts
+[1.304s] Installing alert_publisher script to /home/razanhmede/ros1hw_ws_razan/rosassignment1/install/myros1package/lib/myros1package
+[1.305s] Installing temperature_logger script to /home/razanhmede/ros1hw_ws_razan/rosassignment1/install/myros1package/lib/myros1package
+[1.305s] Installing temperature_publisher script to /home/razanhmede/ros1hw_ws_razan/rosassignment1/install/myros1package/lib/myros1package
+[1.305s] Installing threshold_subscriber script to /home/razanhmede/ros1hw_ws_razan/rosassignment1/install/myros1package/lib/myros1package
+[1.306s] writing list of installed files to '/home/razanhmede/ros1hw_ws_razan/rosassignment1/build/myros1package/install.log'
+[1.331s] Invoked command in '/home/razanhmede/ros1hw_ws_razan/rosassignment1/src/myros1package' returned '0': PYTHONPATH=/home/razanhmede/ros1hw_ws_razan/rosassignment1/build/myros1package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/razanhmede/ros1hw_ws_razan/rosassignment1/install/myros1package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/myros1package build --build-base /home/razanhmede/ros1hw_ws_razan/rosassignment1/build/myros1package/build install --record /home/razanhmede/ros1hw_ws_razan/rosassignment1/build/myros1package/install.log --single-version-externally-managed install_data
