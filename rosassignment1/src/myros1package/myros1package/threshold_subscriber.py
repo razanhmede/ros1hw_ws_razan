@@ -9,12 +9,16 @@ from std_msgs.msg import Float32,String
 class ThresholdSubscriber(Node):
     def __init__(self):
         super().__init__('threshold_subscriber')
+        #create subscriber to temperature topic
         self.subscription=self.create_subscription(Float32,'temperature',self.temperature_callback,10)
+        #create publisher 
         self.publisher_=self.create_publisher(String,'alert_trigger',10)
+        #specify the threshold
         self.threshold=36
     def temperature_callback(self, msg):
         temperature=msg.data
         self.get_logger().info('Temperature received : "%f"' % temperature)
+        #check the threshold
         if msg.data>self.threshold:
             self.get_logger().info('Threshold exceeded! Temperature: {: .2f}'.format(msg.data))
             alert_msg= String()

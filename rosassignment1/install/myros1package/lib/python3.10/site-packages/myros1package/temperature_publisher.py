@@ -3,7 +3,7 @@ import rclpy
 from rclpy.node import Node 
 from std_msgs.msg import Float32
 import random 
-import time 
+
 
 class TemperaturePublisher(Node):
     def __init__(self):
