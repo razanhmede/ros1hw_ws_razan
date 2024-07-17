@@ -10,12 +10,12 @@ class TemperatureLogger(Node):
     def __init__(self):
         super().__init__('temperature_logger')
         self.subscription = self.create_subscription(Float32,'temperature',self.listener_callback,10)
-        log_dir = os.path.expanduser('~/home/ros2hw_ws_razan')
+        log_dir = os.path.expanduser('~/ros1hw_ws_razan')
         os.makedirs(log_dir, exist_ok=True)
         self.log_file_path = os.path.join(log_dir, 'temperature_log.txt')
         self.get_logger().info(f'Logged temperature to {self.log_file_path }')
 
-        self.log_file=open(self.log_file_path,'a') #open in apend mode
+        self.log_file=open(self.log_file_path,'a') #open in append mode
     def listener_callback(self, msg):
         temp_value = msg.data
         timestamp = time.time()  
