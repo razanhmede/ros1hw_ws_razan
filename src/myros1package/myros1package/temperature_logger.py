@@ -1,26 +1,31 @@
 #the temperature node subscribes to the tempearture topic of the tempearture publisher node 
 #logs the temperature values to a text file 
 import rclpy
-from rclpy.node import Node 
+from rclpy.node import Node
 from std_msgs.msg import Float32
+import time
 import os
 
 class TemperatureLogger(Node):
     def __init__(self):
         super().__init__('temperature_logger')
-        self.subscription=self.create_subscription(Float32,'temperature', self.listener_callback,10)
-        #open a log file in append mode to write the temperature values to it 
-        log_dir = os.path.join(os.path.expanduser('~'), 'temperature_logs')
+        self.subscription = self.create_subscription(Float32,'temperature',self.listener_callback,10)
+        log_dir = os.path.expanduser('~/home/ros2hw_ws_razan')
         os.makedirs(log_dir, exist_ok=True)
-        self.log_file = open(os.path.join(log_dir, 'temperature_log.txt'), 'a')
+        self.log_file_path = os.path.join(log_dir, 'temperature_log.txt')
+        self.get_logger().info(f'Logged temperature to {self.log_file_path }')
+
+        self.log_file=open(self.log_file_path,'a') #open in apend mode
     def listener_callback(self, msg):
         temp_value = msg.data
-        self.get_logger().info(f'Logging temperature: {temp_value}')
-        #include time stamp and temperature value 
-        self.log_file.write(f'{self.get_clock().now().to_msg().sec}, {temp_value}\n')
+        timestamp = time.time()  
+        log_entry = f'{timestamp}, {temp_value} Celsius\n'
+        self.log_file.write(log_entry)
+        self.get_logger().info(log_entry.strip())
+
     def destroy_node(self):
         self.log_file.close()
-        super().destroy_node()
+        super().destroy_node()    
 
 def main(args=None):
     rclpy.init(args=args)
@@ -31,7 +36,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
-
-
-
