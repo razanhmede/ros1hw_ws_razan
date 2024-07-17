@@ -1,5 +1,6 @@
 [console_scripts]
 alert_publisher = myros1package.alert_publisher:main
+temperature_logger = myros1package.temperature_logger:main
 temperature_publisher = myros1package.temperature_publisher:main
 threshold_subscriber = myros1package.threshold_subscriber:main
 
